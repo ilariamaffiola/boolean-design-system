@@ -67,3 +67,62 @@ export default tseslint.config([
   },
 ])
 ```
+#Boolean Design System
+
+
+## Esempi di DS
+
+ - https://www.bbc.com/gel/guidelines
+ - https://www.wix.com/studio/blog/design-system-examples
+ - https://fluent2.microsoft.design/
+ -https://storybook.getbento.com/?selectedKind=Getting%20Started&selectedStory=Introduction&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel
+
+
+## Tool per design-system
+-https://storybook.js.org/docs
+-https://docusaurus.io/
+
+## Installiamo StoryBook
+
+`npm create storybook@latest`
+
+scegliamo come framework React e Vite quando ci viene chiesto il project tyoe oppure installiamo Vite e React manualmente con
+
+`npm install --save-dev @storybook/react-vite`
+
+In caso di errore di installazione, installiamo le dipendenze manualmente con 
+
+`npm install vite react react-dom --save-dev`
+
+Lanciando il comando `npm run storybook` ci verrà chiesto di scegliere un port per lo StoryBook, scegliamo 6006. 
+Avviamo sul nostro browser la nostra prima pagina di StoryBook.
+
+## Utilizzare TypeScript
+
+`npm install @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript`
+
+Creiamo nella root di progetto un file tsconfig.json con il seguente contenuto
+````JSON
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["stories", ".storybook", "components"]
+} 
+```
