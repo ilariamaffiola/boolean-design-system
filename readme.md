@@ -72,10 +72,11 @@ export default tseslint.config([
 
 ## Esempi di DS
 
- - https://www.bbc.com/gel/guidelines
- - https://www.wix.com/studio/blog/design-system-examples
- - https://fluent2.microsoft.design/
- -https://storybook.getbento.com/?selectedKind=Getting%20Started&selectedStory=Introduction&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel
+-https://www.bbc.com/gel/guidelines
+-https://www.wix.com/studio/blog/design-system-examples#viewer-3ndfl
+-https://fluent2.microsoft.design
+-https://storybook.bento-ds.com/
+-https://components.tot.money/?path=/docs/intro--docs
 
 
 ## Tool per design-system
