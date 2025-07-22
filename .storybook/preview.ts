@@ -1,6 +1,8 @@
-import type { Preview } from '@storybook/react-vite'
+/**@type { import('@storybook/react').Preview }*/
 import "../src/styles/reset.css";
-const preview: Preview = {
+import "../src/styles/variables.css";
+import { page } from './../node_modules/@vitest/browser/context';
+const preview = {
   parameters: {
     controls: {
       matchers: {
