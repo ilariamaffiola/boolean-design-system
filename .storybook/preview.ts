@@ -1,6 +1,7 @@
 /**@type { import('@storybook/react').Preview }*/
 import "../src/styles/reset.css";
 import "../src/styles/variables.css";
+import "../src/styles/typography.css";
 import { page } from './../node_modules/@vitest/browser/context';
 const preview = {
   parameters: {
