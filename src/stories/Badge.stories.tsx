@@ -20,10 +20,23 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-	render: ({ children }) => (
-		<Badge>{children}</Badge>
+	render: ({ children, variant }) => (
+		<Badge variant={variant}>{children}</Badge>
 	),
 };
 
+export const AllBadges: Story = {
+	render: ({ children, }) => (
+		<>
+		<div style={{ display: 'flex', gap: 'var(--spacing-sm)' }}>
+			<Badge variant='neutral'>{children}</Badge>
+			<Badge variant='positive'>{children}</Badge>
+			<Badge variant='negative'>{children}</Badge>
+		</div>
+		
+		</>
+		
+	),
+};
 
 
